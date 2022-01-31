@@ -1,0 +1,8 @@
+{
+  "name": "csc-438-project",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "a83066f5"
+}
