@@ -12,10 +12,10 @@ export class VehicleMonitoringService {
   constructor(private http: HttpClient) { }
 
   /**
-   * get data from the MTA BusTime API
+   * get realtime data from the MTA BusTime API
    * request information about one, some, or all vehicles monitored by the MTA Bus Time system
    *
-   * @param lineRef a filter by 'fully qualified' route name, GTFS agency ID + route ID (ex. M5)
+   * @param lineRef route name (ex. M5)
    */
   searchData(lineRef: string): Observable<any> {
     return this.http.get(`${this.url}?key=${this.apiKey}&LineRef=${lineRef}`);
