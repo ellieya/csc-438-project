@@ -1,4 +1,4 @@
-<ion-header>
+<!-- <ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
@@ -23,4 +23,59 @@
       </ion-col>
     </ion-row>
   </form>
+</ion-content> -->
+<ion-content >
+  <div class="auth-form">
+  <div class="card-container">
+    <ion-card>
+      <ion-card-header>
+        <ion-text> Enter your email and create a password to sign up!</ion-text>
+      </ion-card-header>
+
+      <ion-card-content>
+
+        <div>
+          <form>
+          <ion-item class="input">
+            <ion-label  position="stacked" color="primary">Email</ion-label>
+            <ion-input type="text" #email required></ion-input>
+          </ion-item>
+          <ion-item class="input">
+            <ion-label  position="stacked" color="primary">Password</ion-label>
+            <ion-input type="password" #password required></ion-input>
+          </ion-item>
+          <ion-button type="submit" class="login-button" color="primary" (click)="signUp(email, password)">
+            Sign Up
+          </ion-button>
+        </form>
+        </div>
+
+        <div class="ion-text-center loading-button-section">
+          <ion-spinner color="primary" *ngIf="isLoading"></ion-spinner>
+        </div>
+
+        <div class="hr-section">
+          <ion-text class="hr-text">
+            OR
+          </ion-text>
+        </div>
+
+        <div class="logo-section">
+          <ion-icon class="fb-logo" name="logo-facebook" color="primary" (click)="socialLogin()"></ion-icon>
+          <ion-icon name="logo-google" color="danger" (click)="socialLogin()"></ion-icon>
+        </div>
+
+        <div class="sign-up-section">
+          <ion-text>
+            Already have an account?
+          </ion-text>
+          <ion-text class="sign-up-text" [routerLink]="['/tabs/favorites']">
+            LOG IN
+          </ion-text>
+        </div>
+
+      </ion-card-content>
+    </ion-card>
+  </div>
+</div>
 </ion-content>
