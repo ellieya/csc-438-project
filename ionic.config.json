@@ -1,7 +1,8 @@
 {
   "name": "csc-438-project",
   "integrations": {
-    "capacitor": {}
+    "capacitor": {},
+    "cordova": {}
   },
   "type": "angular",
   "id": "a83066f5"
