@@ -1,0 +1,25 @@
+ion-content {
+  @media screen and (min-width: 500px){
+    top: 10%;
+  }
+  top: 30%;
+}
+
+ion-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ion-text {
+    margin-top: 5vh;
+    font-size: 2.5em;
+    margin-bottom: 5vh;
+    text-align: center;
+    width: 320px;
+}
+
+ion-button {
+  width: 280px;
+  border-radius: 4px;
+}
