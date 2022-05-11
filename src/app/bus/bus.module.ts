@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { BusPageRoutingModule } from './bus-routing.module';
 
 import { BusPage } from './bus.page';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    BusPageRoutingModule
+    BusPageRoutingModule,
+    HttpClientModule
   ],
   declarations: [BusPage]
 })
