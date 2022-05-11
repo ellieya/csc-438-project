@@ -1,7 +1,20 @@
 <ion-content>
   <ion-item>
-    This is bus
+    {{stopName}}
   </ion-item>
-  {{res | json}}
-  <ion-button (click)="logRes()">res</ion-button>
+  
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>{{longName}}</ion-card-subtitle>
+      <ion-card-title>{{shortName}}</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      {{description}}
+      <br><br>
+      Expected Arrival Time: {{arrivalTime}}
+      <br><br>
+      Number of Stops Away: {{stopsAway}}
+    </ion-card-content>
+  </ion-card>
 </ion-content>
